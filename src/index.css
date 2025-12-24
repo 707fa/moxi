@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-family-dancing: 'Dancing Script', cursive;
+  --font-family-inter: 'Inter', sans-serif;
+  --color-love-pink: #ff6b9d;
+  --color-love-red: #ff4d6d;
+  --color-love-purple: #c77dff;
+  --color-love-dark: #0f0f0f;
+  --color-love-gray: #1a1a1a;
+  --animate-heartbeat: heartbeat 1.4s ease-in-out infinite;
+  --animate-fadeUp: fadeUp 0.8s ease-out;
+  --animate-fall: fall 3s linear infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-float: float 3s ease-in-out infinite;
+  --background-image-love-gradient: linear-gradient(135deg, var(--color-love-purple) 0%, var(--color-love-red) 50%, var(--color-love-purple) 100%);
+  --background-image-dark-gradient: linear-gradient(135deg, var(--color-love-dark) 0%, var(--color-love-gray) 50%, var(--color-love-dark) 100%);
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(255, 107, 157, 0.5); }
+  100% { box-shadow: 0 0 20px rgba(255, 107, 157, 0.8), 0 0 30px rgba(199, 125, 255, 0.6); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+body {
+  background: var(--background-image-dark-gradient);
+  color: white;
+  font-family: var(--font-family-inter);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff4d6d, #ff6b9d);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(255, 77, 109, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
