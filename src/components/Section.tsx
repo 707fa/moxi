@@ -23,7 +23,7 @@ export default function Section({
         )}
       </header>
 
-      <div className="text-white/80 text-lg leading-relaxed bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/10 font-inter hover:animate-glow transition-all duration-500">
+      <div className="text-white/80 text-base md:text-lg leading-relaxed bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl border border-white/20 font-inter hover:animate-glow transition-all duration-500">
         {children}
       </div>
     </section>
