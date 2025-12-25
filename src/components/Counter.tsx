@@ -28,7 +28,11 @@ export default function Counter() {
           {days}
         </div>
         <div className="text-xl text-white/80 mt-2 font-inter font-medium">
+       
           дней вместе ❤️
+        </div>
+        <div className="text-sm text-love-purple mt-1 font-inter">
+          С 15 ноября 2025
         </div>
       </div>
     </div>
