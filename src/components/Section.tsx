@@ -12,7 +12,7 @@ export default function Section({
   return (
     <section className="max-w-5xl mx-auto px-6 py-28 animate-fadeUp">
       <header className="mb-10 text-center">
-        <h2 className="text-4xl md:text-5xl font-dancing font-bold bg-love-gradient bg-clip-text text-transparent drop-shadow-lg">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-dancing font-bold bg-love-gradient bg-clip-text text-transparent drop-shadow-lg">
           {title}
         </h2>
 
